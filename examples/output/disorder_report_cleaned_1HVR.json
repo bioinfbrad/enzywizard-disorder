@@ -1,0 +1,237 @@
+{
+  "output_type": "enzywizard_disorder",
+  "disorder_region_statistics": {
+    "region_num": 3,
+    "max_region_length": 33,
+    "total_region_length": 53
+  },
+  "disorder_regions": [
+    {
+      "length": 33,
+      "residues": [
+        {
+          "aa_id": 16,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 17,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 18,
+          "aa_name": "Q"
+        },
+        {
+          "aa_id": 19,
+          "aa_name": "L"
+        },
+        {
+          "aa_id": 20,
+          "aa_name": "K"
+        },
+        {
+          "aa_id": 21,
+          "aa_name": "E"
+        },
+        {
+          "aa_id": 22,
+          "aa_name": "A"
+        },
+        {
+          "aa_id": 23,
+          "aa_name": "L"
+        },
+        {
+          "aa_id": 24,
+          "aa_name": "L"
+        },
+        {
+          "aa_id": 25,
+          "aa_name": "D"
+        },
+        {
+          "aa_id": 26,
+          "aa_name": "T"
+        },
+        {
+          "aa_id": 27,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 28,
+          "aa_name": "A"
+        },
+        {
+          "aa_id": 29,
+          "aa_name": "D"
+        },
+        {
+          "aa_id": 30,
+          "aa_name": "D"
+        },
+        {
+          "aa_id": 31,
+          "aa_name": "T"
+        },
+        {
+          "aa_id": 32,
+          "aa_name": "V"
+        },
+        {
+          "aa_id": 33,
+          "aa_name": "L"
+        },
+        {
+          "aa_id": 34,
+          "aa_name": "E"
+        },
+        {
+          "aa_id": 35,
+          "aa_name": "E"
+        },
+        {
+          "aa_id": 36,
+          "aa_name": "M"
+        },
+        {
+          "aa_id": 37,
+          "aa_name": "S"
+        },
+        {
+          "aa_id": 38,
+          "aa_name": "L"
+        },
+        {
+          "aa_id": 39,
+          "aa_name": "P"
+        },
+        {
+          "aa_id": 40,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 41,
+          "aa_name": "R"
+        },
+        {
+          "aa_id": 42,
+          "aa_name": "W"
+        },
+        {
+          "aa_id": 43,
+          "aa_name": "K"
+        },
+        {
+          "aa_id": 44,
+          "aa_name": "P"
+        },
+        {
+          "aa_id": 45,
+          "aa_name": "K"
+        },
+        {
+          "aa_id": 46,
+          "aa_name": "M"
+        },
+        {
+          "aa_id": 47,
+          "aa_name": "I"
+        },
+        {
+          "aa_id": 48,
+          "aa_name": "G"
+        }
+      ]
+    },
+    {
+      "length": 13,
+      "residues": [
+        {
+          "aa_id": 53,
+          "aa_name": "F"
+        },
+        {
+          "aa_id": 54,
+          "aa_name": "I"
+        },
+        {
+          "aa_id": 55,
+          "aa_name": "K"
+        },
+        {
+          "aa_id": 56,
+          "aa_name": "V"
+        },
+        {
+          "aa_id": 57,
+          "aa_name": "R"
+        },
+        {
+          "aa_id": 58,
+          "aa_name": "Q"
+        },
+        {
+          "aa_id": 59,
+          "aa_name": "Y"
+        },
+        {
+          "aa_id": 60,
+          "aa_name": "D"
+        },
+        {
+          "aa_id": 61,
+          "aa_name": "Q"
+        },
+        {
+          "aa_id": 62,
+          "aa_name": "I"
+        },
+        {
+          "aa_id": 63,
+          "aa_name": "L"
+        },
+        {
+          "aa_id": 64,
+          "aa_name": "I"
+        },
+        {
+          "aa_id": 65,
+          "aa_name": "E"
+        }
+      ]
+    },
+    {
+      "length": 7,
+      "residues": [
+        {
+          "aa_id": 1,
+          "aa_name": "P"
+        },
+        {
+          "aa_id": 2,
+          "aa_name": "Q"
+        },
+        {
+          "aa_id": 3,
+          "aa_name": "V"
+        },
+        {
+          "aa_id": 4,
+          "aa_name": "T"
+        },
+        {
+          "aa_id": 5,
+          "aa_name": "L"
+        },
+        {
+          "aa_id": 6,
+          "aa_name": "W"
+        },
+        {
+          "aa_id": 7,
+          "aa_name": "Q"
+        }
+      ]
+    }
+  ]
+}
