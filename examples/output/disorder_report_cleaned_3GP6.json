@@ -2,28 +2,16 @@
   "output_type": "enzywizard_disorder",
   "disorder_region_statistics": {
     "region_num": 4,
-    "max_region_length": 62,
-    "total_region_length": 121
+    "max_region_length": 64,
+    "total_region_length": 127
   },
   "disorder_regions": [
     {
-      "length": 62,
+      "length": 64,
       "residues": [
         {
-          "aa_id": 31,
-          "aa_name": "T"
-        },
-        {
-          "aa_id": 32,
-          "aa_name": "W"
-        },
-        {
-          "aa_id": 33,
-          "aa_name": "H"
-        },
-        {
           "aa_id": 34,
-          "aa_name": "A"
+          "aa_name": "H"
         },
         {
           "aa_id": 35,
@@ -31,131 +19,131 @@
         },
         {
           "aa_id": 36,
-          "aa_name": "E"
+          "aa_name": "R"
         },
         {
           "aa_id": 37,
-          "aa_name": "R"
+          "aa_name": "F"
         },
         {
           "aa_id": 38,
-          "aa_name": "P"
+          "aa_name": "A"
         },
         {
           "aa_id": 39,
-          "aa_name": "W"
-        },
-        {
-          "aa_id": 40,
-          "aa_name": "G"
-        },
-        {
-          "aa_id": 41,
-          "aa_name": "G"
-        },
-        {
-          "aa_id": 42,
-          "aa_name": "G"
-        },
-        {
-          "aa_id": 43,
-          "aa_name": "F"
-        },
-        {
-          "aa_id": 44,
-          "aa_name": "G"
-        },
-        {
-          "aa_id": 45,
-          "aa_name": "L"
-        },
-        {
-          "aa_id": 46,
-          "aa_name": "S"
-        },
-        {
-          "aa_id": 47,
-          "aa_name": "R"
-        },
-        {
-          "aa_id": 48,
-          "aa_name": "W"
-        },
-        {
-          "aa_id": 49,
-          "aa_name": "D"
-        },
-        {
-          "aa_id": 50,
-          "aa_name": "E"
-        },
-        {
-          "aa_id": 51,
-          "aa_name": "K"
-        },
-        {
-          "aa_id": 52,
-          "aa_name": "G"
-        },
-        {
-          "aa_id": 53,
-          "aa_name": "N"
-        },
-        {
-          "aa_id": 54,
-          "aa_name": "W"
-        },
-        {
-          "aa_id": 55,
-          "aa_name": "H"
-        },
-        {
-          "aa_id": 56,
-          "aa_name": "G"
-        },
-        {
-          "aa_id": 57,
-          "aa_name": "L"
-        },
-        {
-          "aa_id": 58,
           "aa_name": "Y"
         },
         {
-          "aa_id": 59,
-          "aa_name": "A"
+          "aa_id": 40,
+          "aa_name": "N"
         },
         {
-          "aa_id": 60,
-          "aa_name": "M"
+          "aa_id": 41,
+          "aa_name": "E"
         },
         {
-          "aa_id": 61,
-          "aa_name": "A"
+          "aa_id": 42,
+          "aa_name": "R"
         },
         {
-          "aa_id": 62,
-          "aa_name": "F"
+          "aa_id": 43,
+          "aa_name": "P"
         },
         {
-          "aa_id": 63,
-          "aa_name": "K"
-        },
-        {
-          "aa_id": 64,
-          "aa_name": "D"
-        },
-        {
-          "aa_id": 65,
-          "aa_name": "S"
-        },
-        {
-          "aa_id": 66,
+          "aa_id": 44,
           "aa_name": "W"
         },
         {
-          "aa_id": 67,
+          "aa_id": 45,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 46,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 47,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 48,
+          "aa_name": "F"
+        },
+        {
+          "aa_id": 49,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 50,
+          "aa_name": "L"
+        },
+        {
+          "aa_id": 51,
+          "aa_name": "S"
+        },
+        {
+          "aa_id": 52,
+          "aa_name": "R"
+        },
+        {
+          "aa_id": 53,
+          "aa_name": "W"
+        },
+        {
+          "aa_id": 54,
+          "aa_name": "D"
+        },
+        {
+          "aa_id": 55,
+          "aa_name": "E"
+        },
+        {
+          "aa_id": 56,
+          "aa_name": "K"
+        },
+        {
+          "aa_id": 57,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 58,
           "aa_name": "N"
+        },
+        {
+          "aa_id": 59,
+          "aa_name": "W"
+        },
+        {
+          "aa_id": 60,
+          "aa_name": "H"
+        },
+        {
+          "aa_id": 61,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 62,
+          "aa_name": "L"
+        },
+        {
+          "aa_id": 63,
+          "aa_name": "Y"
+        },
+        {
+          "aa_id": 64,
+          "aa_name": "A"
+        },
+        {
+          "aa_id": 65,
+          "aa_name": "M"
+        },
+        {
+          "aa_id": 66,
+          "aa_name": "A"
+        },
+        {
+          "aa_id": 67,
+          "aa_name": "F"
         },
         {
           "aa_id": 68,
@@ -163,104 +151,124 @@
         },
         {
           "aa_id": 69,
-          "aa_name": "W"
-        },
-        {
-          "aa_id": 70,
-          "aa_name": "E"
-        },
-        {
-          "aa_id": 71,
-          "aa_name": "P"
-        },
-        {
-          "aa_id": 72,
-          "aa_name": "I"
-        },
-        {
-          "aa_id": 73,
-          "aa_name": "A"
-        },
-        {
-          "aa_id": 74,
-          "aa_name": "G"
-        },
-        {
-          "aa_id": 75,
-          "aa_name": "Y"
-        },
-        {
-          "aa_id": 76,
-          "aa_name": "G"
-        },
-        {
-          "aa_id": 77,
-          "aa_name": "W"
-        },
-        {
-          "aa_id": 78,
-          "aa_name": "E"
-        },
-        {
-          "aa_id": 79,
-          "aa_name": "S"
-        },
-        {
-          "aa_id": 80,
-          "aa_name": "T"
-        },
-        {
-          "aa_id": 81,
-          "aa_name": "W"
-        },
-        {
-          "aa_id": 82,
-          "aa_name": "R"
-        },
-        {
-          "aa_id": 83,
-          "aa_name": "P"
-        },
-        {
-          "aa_id": 84,
-          "aa_name": "L"
-        },
-        {
-          "aa_id": 85,
-          "aa_name": "A"
-        },
-        {
-          "aa_id": 86,
           "aa_name": "D"
         },
         {
-          "aa_id": 87,
-          "aa_name": "E"
+          "aa_id": 70,
+          "aa_name": "S"
         },
         {
-          "aa_id": 88,
+          "aa_id": 71,
+          "aa_name": "W"
+        },
+        {
+          "aa_id": 72,
           "aa_name": "N"
         },
         {
+          "aa_id": 73,
+          "aa_name": "K"
+        },
+        {
+          "aa_id": 74,
+          "aa_name": "W"
+        },
+        {
+          "aa_id": 75,
+          "aa_name": "E"
+        },
+        {
+          "aa_id": 76,
+          "aa_name": "P"
+        },
+        {
+          "aa_id": 77,
+          "aa_name": "I"
+        },
+        {
+          "aa_id": 78,
+          "aa_name": "A"
+        },
+        {
+          "aa_id": 79,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 80,
+          "aa_name": "Y"
+        },
+        {
+          "aa_id": 81,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 82,
+          "aa_name": "W"
+        },
+        {
+          "aa_id": 83,
+          "aa_name": "E"
+        },
+        {
+          "aa_id": 84,
+          "aa_name": "S"
+        },
+        {
+          "aa_id": 85,
+          "aa_name": "T"
+        },
+        {
+          "aa_id": 86,
+          "aa_name": "W"
+        },
+        {
+          "aa_id": 87,
+          "aa_name": "R"
+        },
+        {
+          "aa_id": 88,
+          "aa_name": "P"
+        },
+        {
           "aa_id": 89,
-          "aa_name": "F"
-        },
-        {
-          "aa_id": 90,
-          "aa_name": "H"
-        },
-        {
-          "aa_id": 91,
           "aa_name": "L"
         },
         {
+          "aa_id": 90,
+          "aa_name": "A"
+        },
+        {
+          "aa_id": 91,
+          "aa_name": "D"
+        },
+        {
           "aa_id": 92,
+          "aa_name": "E"
+        },
+        {
+          "aa_id": 93,
+          "aa_name": "N"
+        },
+        {
+          "aa_id": 94,
+          "aa_name": "F"
+        },
+        {
+          "aa_id": 95,
+          "aa_name": "H"
+        },
+        {
+          "aa_id": 96,
+          "aa_name": "L"
+        },
+        {
+          "aa_id": 97,
           "aa_name": "G"
         }
       ]
     },
     {
-      "length": 28,
+      "length": 29,
       "residues": [
         {
           "aa_id": 1,
@@ -280,15 +288,15 @@
         },
         {
           "aa_id": 5,
-          "aa_name": "W"
+          "aa_name": "E"
         },
         {
           "aa_id": 6,
-          "aa_name": "M"
+          "aa_name": "W"
         },
         {
           "aa_id": 7,
-          "aa_name": "T"
+          "aa_name": "M"
         },
         {
           "aa_id": 8,
@@ -296,43 +304,43 @@
         },
         {
           "aa_id": 9,
-          "aa_name": "F"
-        },
-        {
-          "aa_id": 10,
-          "aa_name": "R"
-        },
-        {
-          "aa_id": 11,
-          "aa_name": "E"
-        },
-        {
-          "aa_id": 12,
-          "aa_name": "N"
-        },
-        {
-          "aa_id": 13,
-          "aa_name": "I"
-        },
-        {
-          "aa_id": 14,
-          "aa_name": "A"
-        },
-        {
-          "aa_id": 15,
-          "aa_name": "Q"
-        },
-        {
-          "aa_id": 16,
           "aa_name": "T"
         },
         {
+          "aa_id": 10,
+          "aa_name": "F"
+        },
+        {
+          "aa_id": 11,
+          "aa_name": "R"
+        },
+        {
+          "aa_id": 12,
+          "aa_name": "E"
+        },
+        {
+          "aa_id": 13,
+          "aa_name": "N"
+        },
+        {
+          "aa_id": 14,
+          "aa_name": "I"
+        },
+        {
+          "aa_id": 15,
+          "aa_name": "A"
+        },
+        {
+          "aa_id": 16,
+          "aa_name": "Q"
+        },
+        {
           "aa_id": 17,
-          "aa_name": "W"
+          "aa_name": "T"
         },
         {
           "aa_id": 18,
-          "aa_name": "Q"
+          "aa_name": "W"
         },
         {
           "aa_id": 19,
@@ -340,123 +348,139 @@
         },
         {
           "aa_id": 20,
-          "aa_name": "P"
+          "aa_name": "Q"
         },
         {
           "aa_id": 21,
-          "aa_name": "E"
+          "aa_name": "P"
         },
         {
           "aa_id": 22,
-          "aa_name": "H"
+          "aa_name": "E"
         },
         {
           "aa_id": 23,
-          "aa_name": "Y"
+          "aa_name": "H"
         },
         {
           "aa_id": 24,
-          "aa_name": "D"
-        },
-        {
-          "aa_id": 25,
-          "aa_name": "L"
-        },
-        {
-          "aa_id": 26,
           "aa_name": "Y"
         },
         {
+          "aa_id": 25,
+          "aa_name": "D"
+        },
+        {
+          "aa_id": 26,
+          "aa_name": "L"
+        },
+        {
           "aa_id": 27,
-          "aa_name": "I"
+          "aa_name": "Y"
         },
         {
           "aa_id": 28,
+          "aa_name": "I"
+        },
+        {
+          "aa_id": 29,
           "aa_name": "P"
         }
       ]
     },
     {
-      "length": 20,
+      "length": 23,
       "residues": [
         {
-          "aa_id": 122,
-          "aa_name": "G"
-        },
-        {
-          "aa_id": 123,
-          "aa_name": "P"
-        },
-        {
-          "aa_id": 124,
-          "aa_name": "V"
-        },
-        {
-          "aa_id": 125,
-          "aa_name": "T"
-        },
-        {
-          "aa_id": 126,
-          "aa_name": "F"
-        },
-        {
           "aa_id": 127,
-          "aa_name": "Q"
+          "aa_name": "G"
         },
         {
           "aa_id": 128,
-          "aa_name": "M"
-        },
-        {
-          "aa_id": 129,
-          "aa_name": "T"
-        },
-        {
-          "aa_id": 130,
-          "aa_name": "Y"
-        },
-        {
-          "aa_id": 131,
-          "aa_name": "I"
-        },
-        {
-          "aa_id": 132,
           "aa_name": "P"
         },
         {
-          "aa_id": 133,
-          "aa_name": "G"
-        },
-        {
-          "aa_id": 134,
-          "aa_name": "N"
-        },
-        {
-          "aa_id": 135,
-          "aa_name": "G"
-        },
-        {
-          "aa_id": 136,
-          "aa_name": "N"
-        },
-        {
-          "aa_id": 137,
+          "aa_id": 129,
           "aa_name": "V"
         },
         {
-          "aa_id": 138,
-          "aa_name": "Y"
+          "aa_id": 130,
+          "aa_name": "T"
         },
         {
-          "aa_id": 139,
+          "aa_id": 131,
           "aa_name": "F"
         },
         {
+          "aa_id": 132,
+          "aa_name": "Q"
+        },
+        {
+          "aa_id": 133,
+          "aa_name": "M"
+        },
+        {
+          "aa_id": 134,
+          "aa_name": "T"
+        },
+        {
+          "aa_id": 135,
+          "aa_name": "Y"
+        },
+        {
+          "aa_id": 136,
+          "aa_name": "I"
+        },
+        {
+          "aa_id": 137,
+          "aa_name": "P"
+        },
+        {
+          "aa_id": 138,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 139,
+          "aa_name": "T"
+        },
+        {
           "aa_id": 140,
-          "aa_name": "A"
+          "aa_name": "Y"
         },
         {
           "aa_id": 141,
+          "aa_name": "N"
+        },
+        {
+          "aa_id": 142,
+          "aa_name": "N"
+        },
+        {
+          "aa_id": 143,
+          "aa_name": "G"
+        },
+        {
+          "aa_id": 144,
+          "aa_name": "N"
+        },
+        {
+          "aa_id": 145,
+          "aa_name": "V"
+        },
+        {
+          "aa_id": 146,
+          "aa_name": "Y"
+        },
+        {
+          "aa_id": 147,
+          "aa_name": "F"
+        },
+        {
+          "aa_id": 148,
+          "aa_name": "A"
+        },
+        {
+          "aa_id": 149,
           "aa_name": "W"
         }
       ]
@@ -465,47 +489,47 @@
       "length": 11,
       "residues": [
         {
-          "aa_id": 98,
+          "aa_id": 103,
           "aa_name": "G"
         },
         {
-          "aa_id": 99,
+          "aa_id": 104,
           "aa_name": "V"
         },
         {
-          "aa_id": 100,
+          "aa_id": 105,
           "aa_name": "T"
         },
         {
-          "aa_id": 101,
+          "aa_id": 106,
           "aa_name": "A"
         },
         {
-          "aa_id": 102,
+          "aa_id": 107,
           "aa_name": "R"
         },
         {
-          "aa_id": 103,
+          "aa_id": 108,
           "aa_name": "D"
         },
         {
-          "aa_id": 104,
+          "aa_id": 109,
           "aa_name": "N"
         },
         {
-          "aa_id": 105,
+          "aa_id": 110,
           "aa_name": "W"
         },
         {
-          "aa_id": 106,
+          "aa_id": 111,
           "aa_name": "N"
         },
         {
-          "aa_id": 107,
+          "aa_id": 112,
           "aa_name": "Y"
         },
         {
-          "aa_id": 108,
+          "aa_id": 113,
           "aa_name": "I"
         }
       ]
