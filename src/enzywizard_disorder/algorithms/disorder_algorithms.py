@@ -7,7 +7,7 @@ from Bio.PDB.Structure import Structure
 from ..utils.logging_utils import Logger
 from ..utils.structure_utils import get_single_chain, get_chain_length, get_residues_by_chain, get_sequence
 from ..resources.aa_physicochemical_props import hydrophobicity_dict, net_charge_dict
-from ..utils.disorder_utils import moving_average
+from ..utils.disorder_utils import moving_average, postprocess_disorder_report_to_schema
 from ..utils.sequence_utils import normalize_aa_name_to_one_letter
 
 def predict_disorder_scores( sequence: str, logger: Logger, window_size: int = 11, ) -> List[float] | None:
@@ -184,8 +184,15 @@ def generate_disorder_report(disorder_regions: List[Dict[str, Any]], logger: Log
         logger.print("[ERROR] Failed to calculate disorder region statistics.")
         return None
 
-    return {
+    raw_report = {
         "output_type": "enzywizard_disorder",
         "disorder_region_statistics": disorder_region_statistics,
         "disorder_regions": disorder_regions,
     }
+
+    report = postprocess_disorder_report_to_schema(raw_report, logger)
+    if report is None:
+        logger.print("[ERROR] Failed to postprocess disorder report to schema.")
+        return None
+
+    return report
