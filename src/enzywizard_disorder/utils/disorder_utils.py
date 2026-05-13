@@ -30,141 +30,41 @@ def postprocess_disorder_report_to_schema(
     logger: Logger,
 ) -> Dict[str, Any] | None:
     """
-    Convert the raw EnzyWizard-Disorder report into the schema-compliant
-    EnzyWizard-Disorder JSON report format.
-
+    Postprocess the raw EnzyWizard-Disorder report into the official JSON Schema field names.
     """
 
-    if not isinstance(raw_report, dict):
-        logger.print("[ERROR] raw_report must be a dictionary.")
-        return None
+    try:
+        raw_statistics = raw_report.get("disorder_region_statistics", {})
+        raw_regions = raw_report.get("disorder_regions", [])
 
-    output_type = raw_report.get("output_type")
-    if output_type != "enzywizard_disorder":
-        logger.print(
-            f"[ERROR] Invalid output_type in disorder report: {output_type}. "
-            "Expected 'enzywizard_disorder'."
-        )
-        return None
+        disordered_regions: List[Dict[str, Any]] = []
 
-    raw_statistics = raw_report.get("disorder_region_statistics")
-    if not isinstance(raw_statistics, dict):
-        logger.print("[ERROR] Missing or invalid disorder_region_statistics in disorder report.")
-        return None
+        for raw_region in raw_regions:
+            residues: List[Dict[str, Any]] = []
 
-    region_num = raw_statistics.get("region_num")
-    max_region_length = raw_statistics.get("max_region_length")
-    total_region_length = raw_statistics.get("total_region_length")
+            for raw_residue in raw_region.get("residues", []):
+                residues.append({
+                    "residue_index": raw_residue.get("aa_id"),
+                    "residue_name": raw_residue.get("aa_name"),
+                })
 
-    if not isinstance(region_num, int):
-        logger.print("[ERROR] disorder_region_statistics.region_num must be an integer.")
-        return None
-
-    if not isinstance(max_region_length, int):
-        logger.print("[ERROR] disorder_region_statistics.max_region_length must be an integer.")
-        return None
-
-    if not isinstance(total_region_length, int):
-        logger.print("[ERROR] disorder_region_statistics.total_region_length must be an integer.")
-        return None
-
-    if region_num < 0:
-        logger.print("[ERROR] disorder_region_statistics.region_num must be non-negative.")
-        return None
-
-    if max_region_length < 0:
-        logger.print("[ERROR] disorder_region_statistics.max_region_length must be non-negative.")
-        return None
-
-    if total_region_length < 0:
-        logger.print("[ERROR] disorder_region_statistics.total_region_length must be non-negative.")
-        return None
-
-    raw_regions = raw_report.get("disorder_regions")
-    if not isinstance(raw_regions, list):
-        logger.print("[ERROR] Missing or invalid disorder_regions in disorder report.")
-        return None
-
-    disordered_regions: List[Dict[str, Any]] = []
-
-    for region_index, raw_region in enumerate(raw_regions):
-        if not isinstance(raw_region, dict):
-            logger.print(f"[ERROR] Invalid disorder region at index {region_index}.")
-            return None
-
-        region_length = raw_region.get("length")
-        if not isinstance(region_length, int):
-            logger.print(
-                f"[ERROR] disorder_regions[{region_index}].length must be an integer."
-            )
-            return None
-
-        if region_length < 0:
-            logger.print(
-                f"[ERROR] disorder_regions[{region_index}].length must be non-negative."
-            )
-            return None
-
-        raw_residues = raw_region.get("residues")
-        if not isinstance(raw_residues, list):
-            logger.print(
-                f"[ERROR] disorder_regions[{region_index}].residues must be a list."
-            )
-            return None
-
-        residues: List[Dict[str, Any]] = []
-
-        for residue_index_in_region, raw_residue in enumerate(raw_residues):
-            if not isinstance(raw_residue, dict):
-                logger.print(
-                    f"[ERROR] Invalid residue at disorder_regions[{region_index}]"
-                    f".residues[{residue_index_in_region}]."
-                )
-                return None
-
-            aa_id = raw_residue.get("aa_id")
-            aa_name = raw_residue.get("aa_name")
-
-            if not isinstance(aa_id, int):
-                logger.print(
-                    f"[ERROR] disorder_regions[{region_index}]"
-                    f".residues[{residue_index_in_region}].aa_id must be an integer."
-                )
-                return None
-
-            if not isinstance(aa_name, str):
-                logger.print(
-                    f"[ERROR] disorder_regions[{region_index}]"
-                    f".residues[{residue_index_in_region}].aa_name must be a string."
-                )
-                return None
-
-            if len(aa_name) != 1 or aa_name not in "ACDEFGHIKLMNPQRSTVWY":
-                logger.print(
-                    f"[ERROR] disorder_regions[{region_index}]"
-                    f".residues[{residue_index_in_region}].aa_name must be a valid "
-                    "one-letter amino acid code."
-                )
-                return None
-
-            residues.append({
-                "residue_index": aa_id,
-                "residue_name": aa_name,
+            disordered_regions.append({
+                "disordered_region_length": raw_region.get("length"),
+                "residues": residues,
             })
 
-        disordered_regions.append({
-            "disordered_region_length": region_length,
-            "residues": residues,
-        })
+        schema_report: Dict[str, Any] = {
+            "report_type": raw_report.get("output_type"),
+            "disordered_region_statistics": {
+                "disordered_region_count": raw_statistics.get("region_num"),
+                "max_disordered_region_length": raw_statistics.get("max_region_length"),
+                "total_disordered_region_length": raw_statistics.get("total_region_length"),
+            },
+            "disordered_regions": disordered_regions,
+        }
 
-    schema_report: Dict[str, Any] = {
-        "report_type": "enzywizard_disorder",
-        "disordered_region_statistics": {
-            "disordered_region_count": region_num,
-            "max_disordered_region_length": max_region_length,
-            "total_disordered_region_length": total_region_length,
-        },
-        "disordered_regions": disordered_regions,
-    }
+        return schema_report
 
-    return schema_report
+    except Exception as e:
+        logger.print(f"[ERROR] Failed to postprocess disorder report to schema: {e}")
+        return None
