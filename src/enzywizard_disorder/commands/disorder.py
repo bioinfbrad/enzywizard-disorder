@@ -1,5 +1,6 @@
 from __future__ import annotations
 from argparse import Namespace, ArgumentParser
+import sys
 from ..services.disorder_service import run_disorder_service
 
 
@@ -13,4 +14,6 @@ def add_disorder_parser(parser:ArgumentParser) -> None:
 
 
 def run_disorder(args: Namespace) -> None:
-    run_disorder_service(input_path=args.input_path,output_dir=args.output_dir,window_size=args.window_size,min_region_length=args.min_region_length)
+    success = run_disorder_service(input_path=args.input_path,output_dir=args.output_dir,window_size=args.window_size,min_region_length=args.min_region_length)
+    if not success:
+        sys.exit(1)

@@ -49,6 +49,7 @@ def run_disorder_service(input_path: str | Path,output_dir: str | Path, window_s
 
     #---- check structure ----
     if not check_cleaned_structure(structure, logger):
+        logger.print("[ERROR] Cleaned structure validation failed")
         return False
     logger.print(f"[INFO] Structure checked")
 
@@ -56,9 +57,11 @@ def run_disorder_service(input_path: str | Path,output_dir: str | Path, window_s
     logger.print("[INFO] Intrinsically disordered regions calculation started")
     disorder_regions=compute_disordered_regions(structure,logger,window_size=window_size,min_region_length=min_region_length)
     if disorder_regions is None:
+        logger.print("[ERROR] Failed to calculate intrinsically disordered regions")
         return False
     report = generate_disorder_report(disorder_regions, logger)
     if report is None:
+        logger.print("[ERROR] Failed to generate disorder report")
         return False
 
     # ---- write output ----
