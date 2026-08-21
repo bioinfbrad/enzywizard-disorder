@@ -26,7 +26,7 @@ setup(
     python_requires=">=3.10",
     install_requires=[
         "biopython>=1.86",
-        "numpy>=1.23.5",
+        "numpy>=1.23.5,<2",
         "packaging",
         # Note: The tool does not require heavy dependencies like prody or torch.
         # The underlying disorder prediction is based on a FoldIndex-like algorithm
